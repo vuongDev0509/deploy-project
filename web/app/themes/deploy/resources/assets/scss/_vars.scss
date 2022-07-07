@@ -1,0 +1,62 @@
+$settings: (
+        "scoped-name": "deploy",
+);
+
+$themeColors: (
+        "light-blue": #1b52d0,
+        "medium-blue": #16316f,
+        "dark-blue": #0b1938,
+        "green": #85c225,
+        "orange": #F1552A,
+        "orange-light": #FE7249,
+);
+
+@each $name, $color in $themeColors {
+    .text-#{$name} {
+        color: $color;
+    }
+    .background-#{$name} {
+        background-color: $color;
+    }
+}
+
+$themeGradients: (
+        "green-gradient":radial-gradient(75% 176%, #85c225 0, #4b9835 100%, #4b9835 0),
+        "blue-gradient": linear-gradient(90deg, #12285a, #0b1938),
+        "orange-gradient": linear-gradient(-45deg, #EE2D25 0%, #F1592A 100%),
+        "orange-gradient-rv": linear-gradient(-45deg, #F1592A 0%, #EE2D25 100%),
+        'brow-gradient': linear-gradient(134deg, #720D09 0%, #A7300B 100%)
+);
+
+@each $name, $color in $themeGradients {
+    .background-#{$name} {
+        background: $color;
+    }
+}
+
+$accentColor: #00278c;
+
+@keyframes float1 {
+	from {
+		transform: translate(10, -10px) rotate(0.001deg);
+	}
+	50% {
+		transform: translate(0, -10px) rotate(0.001deg);
+	}
+	to {
+		transform: translate(10, -10px) rotate(0.001deg);
+	}
+}
+
+
+@keyframes glow-loop {
+	from {
+		transform: translateY(-50%) scale(1);
+	}
+	50% {
+		transform: translateY(-50%) scale(0.7);
+	}
+	to {
+		transform: translateY(-50%) scale(1);
+	}
+}

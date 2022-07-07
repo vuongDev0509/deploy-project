@@ -1,0 +1,19 @@
+{
+  "name": "wonderkarma-block-cgb-guten-block",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start-fun": "parcel watch ./assets/js/functions.js -d ./assets/js -o ./assets/js/functions.min.js --no-source-maps --no-cache",
+    "build-fun": "parcel build ./assets/js/functions.js -d ./assets/js -o ./assets/js/functions.min.js --no-source-maps --no-cache",
+    "start": "cgb-scripts start",
+    "build": "cgb-scripts build",
+    "eject": "cgb-scripts eject"
+  },
+  "dependencies": {
+    "@wordpress/server-side-render": "^3.0.8",
+    "bootstrap-scss": "^5.1.1",
+    "cgb-scripts": "1.23.1",
+    "parcel-bundler": "^1.12.5",
+    "react-sortable-hoc": "^2.0.0"
+  }
+}

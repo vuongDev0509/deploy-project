@@ -1,0 +1,126 @@
+@keyframes rocket-movement {
+    100% {
+        transform: translate(1200px, -600px);
+    }
+}
+
+@keyframes spin-earth {
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+        transition: transform 20s;
+    }
+}
+
+@keyframes move-astronaut {
+    100% {
+        -webkit-transform: translate(-160px, -160px);
+        transform: translate(-160px, -160px);
+    }
+}
+
+@keyframes rotate-astronaut {
+    100% {
+        -webkit-transform: rotate(-720deg);
+        transform: rotate(-720deg);
+    }
+}
+
+@keyframes glow-star {
+    40% {
+        -webkit-opacity: 0.3;
+        opacity: 0.3;
+    }
+    90%, 100% {
+        -webkit-opacity: 1;
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        border-radius: 999999px;
+    }
+}
+
+.f48 {
+
+}
+
+body.error404 {
+    .site-main {
+        min-height: unset;
+    }
+
+    h1 {
+        // font-size: 180px;
+        // color: #dfb853;
+        // font-weight: bold;
+        // font-style: italic;
+        // line-height: 1;
+        // font-family: "Bellefair",sans-serif;
+        font-family: "Cormorant Garamond", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        display: inline-block;
+        font-size: 120px;
+        line-height: 108%;
+        letter-spacing: -0.04em;
+        background: -webkit-radial-gradient(131.57% 634.69% at 18.09% 26.45%, #dfb853 0%, rgba(223, 184, 83, 0) 100%);
+        background: -o-radial-gradient(131.57% 634.69% at 18.09% 26.45%, #dfb853 0%, rgba(223, 184, 83, 0) 100%);
+        background: radial-gradient(131.57% 634.69% at 18.09% 26.45%, #dfb853 0%, rgba(223, 184, 83, 0) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    .des {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-family: "Josefin Sans",sans-serif;
+    }
+    p{
+        font-family: "Josefin Sans",sans-serif;
+    }
+
+    //p {
+    //    font-weight: bold;
+    //}
+
+    .central-body {
+        //padding: 17% 5% 10% 5%;
+        //text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40vh;
+        position: relative;
+        z-index: 2;
+        padding: 100px 0;
+        .central-inner{
+            text-align: center;
+        }
+    }
+
+    @include media-breakpoint-down('md') {
+        .central-body {
+            padding-top: 25%;
+        }
+        h1 {
+            font-size: 100px;
+        }
+        .des {
+            font-size: 1.5rem;
+        }
+    }
+    @include media-breakpoint-down('xs') {
+        h1 {
+            font-size: 80px;
+        }
+        .des {
+            font-size: 1rem;
+        }
+    }
+
+}

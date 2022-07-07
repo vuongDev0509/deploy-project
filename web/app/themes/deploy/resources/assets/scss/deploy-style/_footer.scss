@@ -1,0 +1,189 @@
+.main-footer{
+    // background-color: #020F24;
+    padding: 60px 0;
+    @media only screen and (max-width: 767px) {
+        padding: 41px 0;
+    }
+    position: relative;
+    .wk-sparkle {
+        position: absolute;
+        bottom: 0;
+        &.wk-sparkle-ft-left{
+            left: 0;
+        }
+        &.wk-sparkle-ft-right{
+            right: 0;
+        }
+    }
+    .footer-inner__item{
+        &__title{
+            font-family: $BellefairFont;
+            color:#DFB853;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 38px;
+            line-height: 116%;
+            letter-spacing: -0.04em;
+            margin: 0 0 30px 0;
+            padding: 0;
+            @media only screen and (max-width: 991px) {
+                font-size: 35px;
+            }
+            @media only screen and (max-width: 767px) {
+                font-size: 32px;
+                line-height: 188%;
+                margin-bottom: 10px;
+            }
+        }
+        &:last-child{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            @media only screen and (max-width: 991px) {
+                margin-top: 30px;
+            }
+        }
+        .won_form_ft{
+            width: 100%;
+        }
+    }
+
+    .locations-ft{
+        display: flex;
+        @media only screen and (max-width: 767px) {
+            flex-wrap: wrap;
+        }
+        &__item{
+            width: calc(100% / var(--width));
+            @media only screen and (max-width: 767px) {
+                width: 100%;
+                &:not(:first-child){
+                    margin-top: 30px;
+                }
+            }
+            p{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 167%;
+                color: #DFB853;
+                margin: 0;
+                font-family: $JosefinFont;
+                @media only screen and (max-width: 767px) {
+                    line-height: 165%;
+                }
+                a{
+                    color:inherit;
+                    font-size:inherit ;
+                    line-height: inherit;
+                    font-weight: inherit;
+                    font-family: inherit;
+                    display: inline-block;
+                    text-decoration: none;
+                }
+                &.__white{
+                    color   : #fff;
+                    font-weight: 300;
+                }
+                &.__phone{
+                    margin-bottom: 40px;
+                    @media only screen and (max-width: 767px) {
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .won_form_subscribe_ft{
+        form.mc4wp-form{
+            .mc4wp-form-fields{
+                width: 100%;
+                display: flex;
+                @media only screen and (max-width: 359px) {
+                    flex-wrap: wrap;
+                }
+                input{
+                    background-color: transparent;
+                    border:none;
+                    padding: 0 18px;
+                    height: 49px;
+                    color:#DFB853;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    border-width: 2px;
+                    border-style: solid;
+                    border-image-slice:2;
+                    @include placeholder-style(rgba(223, 184, 83, 0.33));
+                }
+                input, input::placeholder{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 18px;
+                    letter-spacing: -0.02em;
+                    font-family: $JosefinFont;
+                    @media only screen and (max-width: 767px) {
+                        font-size: 15px;
+                        line-height: 15px;
+                    }
+                }
+                input::placeholder{
+                    opacity: 1;
+                }
+                input[type=email]{
+                    width: calc(100% - 119px);
+                    border-image-source: radial-gradient(70.41% 459.18% at 45.24% 0%, #DFB853 0%, rgba(223, 184, 83, 0) 100%);
+                    margin-right: -2px;
+                    @media only screen and (max-width: 767px) {
+                        width: calc(100% - 95px);
+                    }
+                    @media only screen and (max-width: 359px) {
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
+                input[type=submit]{
+                    width: 119px;
+                    text-align: center;
+                    border-image-source: radial-gradient(70.41% 459.18% at 45.24% 0%, #DFB853 0%, rgba(223, 184, 83, 0) 100%);
+                    font-weight: 500;
+                    @media only screen and (max-width: 767px) {
+                        width: 95px;
+                    }
+                    @media only screen and (max-width: 359px) {
+                        width: 100%;
+                        margin-top: 10px;
+                    }
+                }
+            }
+            &.mc4wp-form-submitted{
+                padding-top: 20px;
+            }
+        }
+        .mc4wp-response{
+            color:#fff;
+            margin: 0;
+            padding: 0px 0 0 0;
+            text-align: center;
+        }
+    }
+
+    .social-items{
+        display: flex;
+        margin: 0px 0 0 0;
+        padding: 0;
+        @media only screen and (max-width: 991px) {
+            margin-top: 30px;
+        }
+        li{
+            list-style:none;
+            margin: 0;
+            padding: 0;
+            &:not(:last-child){
+                margin-right: 27px;
+            }
+        }
+    }
+}
